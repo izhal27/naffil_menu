@@ -14,7 +14,6 @@ const PdfViewer = ({ url }: { url: any }) => {
         <Viewer
           fileUrl={url}
           plugins={[defaultLayoutPluginInstance]}
-          defaultScale={1}
         />
       </Worker>
     </div>
