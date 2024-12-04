@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Daftar Menu Naffil - Cafe & Resto",
     description: "Daftar Menu Naffil - Cafe & Resto | Depan Kampus 4 UNG | Moutong, Kec. Tilongkabila, Kabupaten Bone Bolango, Gorontalo",
-    images: "./opengraph-image.png",
+    images: ["./opengraph-image.png", './opengraph-image-square.png'],
   }
 };
 
