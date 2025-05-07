@@ -1,7 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react';
 import AOS from 'aos';
-import { FaArrowAltCircleUp } from 'react-icons/fa';
 import { PiCaretCircleUpFill } from 'react-icons/pi';
 
 import Navbar from './components/Navbar';
