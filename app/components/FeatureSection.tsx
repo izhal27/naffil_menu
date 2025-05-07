@@ -8,7 +8,7 @@ export default function FeatureSection() {
       </h2>
 
       <FeatureCard
-        title="Masakan oleh Chief Profesional"
+        title="Masakan oleh Chef Profesional"
         description="Pengalaman bertahun-tahun menghadirkan cita rasa istimewa di setiap hidangan."
         image="/images/feature-chef-image.png"
       />
