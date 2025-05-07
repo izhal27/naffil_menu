@@ -17,8 +17,8 @@ export default function Navbar() {
         if (open) {
           setOpen(false);
         }
-      } else {
-        setHidden(false)
+      } else if (lastScrollY < 100) {
+        setHidden(false);
       }
       setLastScrollY(window.scrollY);
     }
