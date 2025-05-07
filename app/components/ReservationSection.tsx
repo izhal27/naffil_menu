@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa'
 
-export default function Reservasi() {
+export default function ReservationSection() {
   return (
     <section id="reservation" className="bg-eerie text-white py-12 text-center">
       <h2 className="text-xl md:text-4xl font-medium">

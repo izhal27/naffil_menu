@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import FeatureSection from './components/FeatureSection';
 import FeaturedMenuSection from './components/FeatureMenuSection';
-import Reservasi from './components/Reservasi';
+import ReservationSection from './components/ReservationSection';
 import LocationSection from './components/Location';
 import Footer from './components/Footer';
 
@@ -21,10 +21,9 @@ export default function Home() {
       <Hero />
       <FeatureSection />
       <FeaturedMenuSection />
-      <Reservasi />
+      <ReservationSection />
       <LocationSection />
       <Footer />
     </main>
-
   )
 }
