@@ -12,7 +12,8 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY && window.scrollY > 50) {
-        setHidden(true)
+        setHidden(true);
+        open && setOpen(false);
       } else {
         setHidden(false)
       }
