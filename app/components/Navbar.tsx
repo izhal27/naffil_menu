@@ -12,16 +12,20 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY && window.scrollY > 50) {
-        setHidden(true)
+        setHidden(true);
+        // @typescript-eslint / no - unused - expressions
+        if (open) {
+          setOpen(false);
+        }
       } else {
         setHidden(false)
       }
-      setLastScrollY(window.scrollY)
+      setLastScrollY(window.scrollY);
     }
 
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [lastScrollY])
+  }, [lastScrollY, open])
 
   return (
     <nav className={`bg-transparent fixed top-0 left-0 text-white w-full z-50 transition-transform duration-700 ${hidden ? '-translate-y-full' : 'translate-y-0'
