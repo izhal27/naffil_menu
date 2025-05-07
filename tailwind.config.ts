@@ -11,6 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        orange: '#F37500',
+        peach: '#FFC48E',
+        eerie: '#1B1B1B',
       },
     },
   },
