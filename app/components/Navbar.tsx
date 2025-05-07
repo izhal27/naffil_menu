@@ -41,12 +41,48 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 text-white font-medium">
-          <li><Link href="#home" className="hover:border-b border-white hover:text-orange transition">Home</Link></li>
-          <li><Link href="#about" className="hover:border-b border-white hover:text-orange transition">Tentang</Link></li>
-          <li><Link href="#feature-menu" className="hover:border-b border-white hover:text-orange transition">Daftar Menu</Link></li>
-          <li><Link href="#reservation" className="hover:border-b border-white hover:text-orange transition">Reservation</Link></li>
-          <li><Link href="#location" className="hover:border-b border-white hover:text-orange transition">Lokasi</Link></li>
+          <li>
+            <Link
+              href="#home"
+              className="relative after:block after:h-[2px] after:bg-orange after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 after:origin-left"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#about"
+              className="relative after:block after:h-[2px] after:bg-orange after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 after:origin-left"
+            >
+              Tentang
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#feature-menu"
+              className="relative after:block after:h-[2px] after:bg-orange after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 after:origin-left"
+            >
+              Daftar Menu
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#reservation"
+              className="relative after:block after:h-[2px] after:bg-orange after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 after:origin-left"
+            >
+              Reservation
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#location"
+              className="relative after:block after:h-[2px] after:bg-orange after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 after:origin-left"
+            >
+              Lokasi
+            </Link>
+          </li>
         </ul>
+
 
         {/* Mobile Hamburger */}
         <div className="md:hidden">
