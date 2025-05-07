@@ -7,25 +7,27 @@ import { HiMenu, HiX } from 'react-icons/hi'
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
+    let prevScrollY = window.scrollY;
+
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY && window.scrollY > 50) {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > prevScrollY && currentScrollY > 50) {
         setHidden(true);
-        // @typescript-eslint / no - unused - expressions
-        if (open) {
-          setOpen(false);
-        }
-      } else if (lastScrollY < 100) {
+        if (open) setOpen(false);
+      }
+      else if (currentScrollY < 100) {
         setHidden(false);
       }
-      setLastScrollY(window.scrollY);
-    }
 
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [lastScrollY, open])
+      prevScrollY = currentScrollY; // update nilai sebelumnya
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [open]);
 
   return (
     <nav className={`bg-transparent fixed top-0 left-0 text-white w-full z-50 transition-transform duration-700 ${hidden ? '-translate-y-full' : 'translate-y-0'
