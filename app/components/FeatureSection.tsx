@@ -3,7 +3,7 @@ import FeatureCard from "./FeatureCard";
 export default function FeatureSection() {
   return (
     <section id='about' className="container mx-auto px-4">
-      <h2 className="text-xl md:text-3xl text-center font-bold mt-12 text-eegie">
+      <h2 data-aos="fade-up" className="text-xl md:text-3xl text-center font-bold mt-12 text-eegie">
         Mengapa harus Naffli Cafe & Resto?
       </h2>
 
