@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  overflow-x: hidden; /* atau visible, tergantung kebutuhanmu */
+  max-width: 100%;
+}
+
 @media (min-width: 768px) {
   [data-aos-md="fade-left"] {
     opacity: 0;
