@@ -47,9 +47,9 @@ export default function Home() {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-5 md:bottom-10 right-5 md:right-10 shadow-md rounded-full bg-white text-orange hover:text-eerie transition duration-300"
+          className="fixed bottom-5 md:bottom-10 right-5 md:right-10 text-orange transition duration-300"
         >
-          <PiCaretCircleUpFill className="text-4xl md:text-6xl" />
+          <PiCaretCircleUpFill className="text-4xl md:text-5xl stroke-0" />
         </button>
       )}
     </main>
