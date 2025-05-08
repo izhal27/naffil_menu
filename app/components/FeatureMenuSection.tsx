@@ -12,11 +12,11 @@ const menus = [
 export default function FeaturedMenuSection() {
   return (
     <section id='feature-menu' className="py-16 px-6 md:px-20 bg-white text-center">
-      <h2 className="text-2xl font-bold mb-8">Daftar Menu Unggulan Kami</h2>
+      <h2 data-aos='fade-up' className="text-2xl font-bold mb-8">Daftar Menu Unggulan Kami</h2>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {menus.map((item, index) => (
-          <div key={index} className="relative rounded-2xl overflow-hidden drop-shadow-2xl">
+          <div data-aos='fade-up' key={index} className="relative rounded-2xl overflow-hidden drop-shadow-2xl">
             <Image
               src={item.image}
               alt={item.name}
@@ -31,7 +31,7 @@ export default function FeaturedMenuSection() {
         ))}
       </div>
 
-      <div className="mt-10">
+      <div data-aos='zoom-in' className="mt-10">
         <Link href={'/menu'} className="bg-orange hover:bg-peach hover:text-eerie text-white px-6 py-3 rounded-full font-semibold transition">Lihat semuanya &rarr;</Link>
       </div>
     </section>
