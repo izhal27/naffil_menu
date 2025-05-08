@@ -7,7 +7,7 @@ export default function Footer() {
         © 2025 Coded with ☕ & <span className="text-red-500">❤️</span> by <span className="font-medium">Risal Walangadi</span>
       </p>
       <div className="flex justify-center gap-6 text-xl">
-        <a href="https://wa.me/+6285240061230?text=Assalamualaikum+Warahmatullahi+Wabarakatuh." target="_blank" rel="noopener noreferrer" className="hover:text-orange">
+        <a href="https://wa.me/+6282197339862?text=Assalamualaikum+Warahmatullahi+Wabarakatuh." target="_blank" rel="noopener noreferrer" className="hover:text-orange">
           <FaWhatsapp />
         </a>
         <a href="https://facebook.com/izhal.gooner" target="_blank" rel="noopener noreferrer" className="hover:text-orange">
