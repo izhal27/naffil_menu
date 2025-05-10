@@ -4,7 +4,7 @@ export default function FeatureSection() {
   return (
     <section id='about' className="container mx-auto px-4">
       <h2 data-aos="fade-up" className="text-xl md:text-3xl text-center font-bold mt-12 text-eegie">
-        Mengapa harus Naffli Cafe & Resto?
+        Mengapa harus di Naffil Cafe & Resto?
       </h2>
 
       <FeatureCard
