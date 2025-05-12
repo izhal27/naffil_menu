@@ -18,7 +18,7 @@ export default function ReservationSection() {
         0852-4006-1230
       </Link>
 
-      <p className="mt-4 md:text-xl text-gray-300">Hubungi kami melalui media sosial</p>
+      <p className="mt-4 md:text-xl text-gray-300">Ikuti kami di media sosial</p>
 
       <div className="flex justify-center gap-6 mt-4 text-2xl">
         <a href="https://www.facebook.com/profile.php?id=61566458211542"
