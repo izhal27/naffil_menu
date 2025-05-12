@@ -72,7 +72,7 @@ export default function Navbar() {
               href="#reservation"
               className="relative after:block after:h-[2px] after:bg-orange after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 after:origin-left"
             >
-              Reservation
+              Reservasi
             </Link>
           </li>
           <li>
@@ -88,7 +88,7 @@ export default function Navbar() {
 
         {/* Mobile Hamburger */}
         <div className="md:hidden">
-          <button onClick={() => setOpen(!open)} className="text-white">
+          <button onClick={() => setOpen(!open)} className="text-white" aria-label="Toggle Menu" aria-expanded="false">
             {open ? <HiX size={28} /> : <HiMenu size={28} />}
           </button>
         </div>
