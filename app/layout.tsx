@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from 'next/script';
 
 import 'aos/dist/aos.css';
 import "./globals.css";
@@ -20,6 +21,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        {/* GA Script */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-BR3VZSVBN9`}
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-BR3VZSVBN9', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
+      </head>
       <body className="max-w-screen-2xl mx-auto">
         {children}
       </body>
