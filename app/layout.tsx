@@ -4,6 +4,7 @@ import Script from 'next/script';
 import 'aos/dist/aos.css';
 import "./globals.css";
 import { Analytics } from "./components/Analytics";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Daftar Menu Naffil - Cafe & Resto",
@@ -44,8 +45,10 @@ export default function RootLayout({
         />
       </head>
       <body className="max-w-screen-2xl mx-auto">
-        <Analytics />
         {children}
+        <Suspense fallback={null}>
+          <Analytics />
+        </Suspense>
       </body>
     </html>
   );
