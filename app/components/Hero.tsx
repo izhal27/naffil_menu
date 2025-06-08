@@ -1,14 +1,7 @@
-'use client'
-import { useEffect } from 'react'
 import Image from 'next/image'
-import AOS from 'aos'
 import Link from 'next/link'
 
 export default function Hero() {
-  useEffect(() => {
-    AOS.init({ duration: 1000 })
-  }, [])
-
   return (
     <section
       id='home'
