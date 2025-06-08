@@ -38,7 +38,7 @@ export default function Navbar() {
         </Link>
 
         <Link href="/" className="md:hidden text-2xl font-bold text-white">
-          <Image src={'/images/naffil-logo.png'} width={30} height={30} alt='logo' />
+          <Image src={'/images/naffil-logo.png'} width={60} height={60} alt='logo' />
         </Link>
 
         {/* Desktop Menu */}
