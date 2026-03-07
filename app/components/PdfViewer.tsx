@@ -1,17 +1,20 @@
-type PdfViewerProps = {
-  url: string;
+"use client";
+
+import { Viewer, Worker } from "@react-pdf-viewer/core";
+import "@react-pdf-viewer/core/lib/styles/index.css";
+import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
+import "@react-pdf-viewer/default-layout/lib/styles/index.css";
+
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+const PdfViewer = ({ url }: { url: any }) => {
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
+  return (
+    <div className="h-screen w-screen">
+      <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.10.111/build/pdf.worker.min.js">
+        <Viewer fileUrl={url} plugins={[defaultLayoutPluginInstance]} />
+      </Worker>
+    </div>
+  );
 };
 
-export default function PdfViewer({ url }: PdfViewerProps) {
-  return (
-    <main className="min-h-screen bg-[#171719] px-4 py-8 text-white">
-      <div className="mx-auto w-full max-w-6xl">
-        <iframe
-          src={url}
-          title="PDF Menu Naffil"
-          className="h-[85vh] w-full rounded border border-white/15 bg-white"
-        />
-      </div>
-    </main>
-  );
-}
+export default PdfViewer;
