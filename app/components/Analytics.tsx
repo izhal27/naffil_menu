@@ -1,12 +1,11 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname, useSearchParams } from "next/navigation";
+import { useEffect } from "react";
 
 declare global {
   interface Window {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    gtag?: (...args: any[]) => void;
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
@@ -16,7 +15,7 @@ export function Analytics() {
 
   useEffect(() => {
     const url = pathname + searchParams.toString();
-    window.gtag?.('event', 'page_view', {
+    window.gtag?.("event", "page_view", {
       page_path: url,
     });
   }, [pathname, searchParams]);
