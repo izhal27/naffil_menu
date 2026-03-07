@@ -129,6 +129,7 @@ export default function Home() {
         close={() => setLightboxIndex(-1)}
         index={lightboxIndex}
         slides={gallerySlides}
+        controller={{ closeOnBackdropClick: true }}
         styles={{ container: { backgroundColor: "rgba(0, 0, 0, 0.78)" } }}
       />
     </main>
