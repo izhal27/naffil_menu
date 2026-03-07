@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { MenuCard } from "./data";
@@ -9,6 +11,13 @@ type MenuSectionProps = {
 };
 
 export function MenuSection({ isLight, displayFontClass, menuCards }: MenuSectionProps) {
+  const trackMenuPdfClick = () => {
+    window.gtag?.("event", "contact_click", {
+      event_category: "engagement",
+      event_label: "lihat_menu_pdf_lengkap",
+    });
+  };
+
   return (
     <section id="menu" className={`py-16 ${isLight ? "bg-[#f7f2ea]" : "bg-[#0f1012]"}`}>
       <div className="mx-auto w-full max-w-6xl px-5 md:px-8">
@@ -37,6 +46,7 @@ export function MenuSection({ isLight, displayFontClass, menuCards }: MenuSectio
         <div id="menu-pdf-cta" className="mt-8 text-center">
           <Link
             href="/menu"
+            onClick={trackMenuPdfClick}
             className="rounded bg-[#d6ab62] px-6 py-3 text-sm font-semibold text-[#171719] hover:bg-[#efc77e]"
           >
             Lihat Menu PDF Lengkap
