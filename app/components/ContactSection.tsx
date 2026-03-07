@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
@@ -12,6 +14,13 @@ export function ContactSection({
   accentHoverClass,
   displayFontClass,
 }: ContactSectionProps) {
+  const trackContactClick = (label: string) => {
+    window.gtag?.("event", "contact_click", {
+      event_category: "engagement",
+      event_label: label,
+    });
+  };
+
   return (
     <section
       id="contact"
@@ -55,6 +64,7 @@ export function ContactSection({
           <div className="mt-5 flex flex-wrap gap-3">
             <Link
               href="/menu"
+              onClick={() => trackContactClick("buka_pdf_menu")}
               className="rounded bg-[#d6ab62] px-6 py-3 text-sm font-semibold text-[#171719] hover:bg-[#efc77e]"
             >
               Buka PDF Menu
@@ -63,6 +73,7 @@ export function ContactSection({
               href="https://wa.me/+6285240061230?text=Halo,+saya+ingin+bertanya."
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackContactClick("reservasi_whatsapp")}
               className={`rounded px-6 py-3 text-sm font-semibold ${
                 isLight
                   ? "border border-[#7d6440]/45 text-[#1d1915] hover:border-[#b48a4b] hover:text-[#7d5b27]"
