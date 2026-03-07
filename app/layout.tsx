@@ -7,7 +7,12 @@ import "./globals.css";
 import { Analytics } from "./components/Analytics";
 import { Suspense } from "react";
 
+const metadataBase = process.env.NEXT_PUBLIC_SITE_URL
+  ? new URL(process.env.NEXT_PUBLIC_SITE_URL)
+  : new URL("http://localhost:3000");
+
 export const metadata: Metadata = {
+  metadataBase,
   title: "Daftar Menu Naffil - Cafe & Resto",
   description: "Daftar Menu Naffil - Cafe & Resto | Depan Kampus 4 UNG | Moutong, Kec. Tilongkabila, Kabupaten Bone Bolango, Gorontalo",
   icons: {

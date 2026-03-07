@@ -3,20 +3,20 @@
 import { Manrope, Playfair_Display } from "next/font/google";
 import { useEffect, useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
-import { AboutSection } from "./components/home/AboutSection";
-import { ContactSection } from "./components/home/ContactSection";
+import { AboutSection } from "./components/AboutSection";
+import { ContactSection } from "./components/ContactSection";
 import {
   gallery,
   menuCards,
   serviceCards,
   whyChoose,
-} from "./components/home/data";
-import { GallerySection } from "./components/home/GallerySection";
-import { Header } from "./components/home/Header";
-import { HeroSection } from "./components/home/HeroSection";
-import { MenuSection } from "./components/home/MenuSection";
-import { SiteFooter } from "./components/home/SiteFooter";
-import { WhyChooseSection } from "./components/home/WhyChooseSection";
+} from "./components/data";
+import { GallerySection } from "./components/GallerySection";
+import { Header } from "./components/Header";
+import { HeroSection } from "./components/HeroSection";
+import { MenuSection } from "./components/MenuSection";
+import { SiteFooter } from "./components/SiteFooter";
+import { WhyChooseSection } from "./components/WhyChooseSection";
 
 const displayFont = Playfair_Display({
   subsets: ["latin"],
