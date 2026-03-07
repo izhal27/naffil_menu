@@ -14,7 +14,8 @@ export function Analytics() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    const url = pathname + searchParams.toString();
+    const query = searchParams.toString();
+    const url = query ? `${pathname}?${query}` : pathname;
     window.gtag?.("event", "page_view", {
       page_path: url,
     });
