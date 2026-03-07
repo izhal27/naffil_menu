@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from 'next/script';
 
 import 'aos/dist/aos.css';
+import "yet-another-react-lightbox/styles.css";
 import "./globals.css";
 import { Analytics } from "./components/Analytics";
 import { Suspense } from "react";
@@ -9,6 +10,11 @@ import { Suspense } from "react";
 export const metadata: Metadata = {
   title: "Daftar Menu Naffil - Cafe & Resto",
   description: "Daftar Menu Naffil - Cafe & Resto | Depan Kampus 4 UNG | Moutong, Kec. Tilongkabila, Kabupaten Bone Bolango, Gorontalo",
+  icons: {
+    icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
+    shortcut: ["/favicon.ico"],
+    apple: [{ url: "/images/naffil-logo.png" }],
+  },
   openGraph: {
     title: "Daftar Menu Naffil - Cafe & Resto",
     description: "Daftar Menu Naffil - Cafe & Resto | Depan Kampus 4 UNG | Moutong, Kec. Tilongkabila, Kabupaten Bone Bolango, Gorontalo",
