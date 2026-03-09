@@ -49,7 +49,17 @@ export function ContactSection({
           <p
             className={`mt-2 text-sm ${isLight ? "text-[#2a231c]/80" : "text-white/75"}`}
           >
-            WhatsApp: +62 821-9733-9862
+            WhatsApp:
+          </p>
+          <p
+            className={`mt-2 text-sm ${isLight ? "text-[#2a231c]/80" : "text-white/75"}`}
+          >
+            +62 852-4006-1230
+          </p>
+          <p
+            className={`mt-2 text-sm ${isLight ? "text-[#2a231c]/80" : "text-white/75"}`}
+          >
+            +62 821-9501-9091
           </p>
         </div>
 
