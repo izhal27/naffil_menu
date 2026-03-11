@@ -36,8 +36,9 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         {/* AdSense verification / ads loader */}
-        <script
+        <Script
           async
+          strategy="beforeInteractive"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9026715797390701"
           crossOrigin="anonymous"
         />
