@@ -7,10 +7,15 @@ type SiteFooterProps = {
 export function SiteFooter({ isLight }: SiteFooterProps) {
   return (
     <footer
-      className={`border-t py-6 text-center text-sm ${isLight ? "border-[#9f7d43]/30 bg-[#eadcc8] text-[#2a231c]/80" : "border-white/10 bg-[#0d0e10] text-white/70"}`}
+      className={`border-t py-6 text-center text-sm ${
+        isLight
+          ? "border-[#2f725e]/20 bg-[#2f725e] text-[#fff8df]/80"
+          : "border-[#dfff6f]/10 bg-[#06110f] text-[#fff8df]/70"
+      }`}
     >
       <p className="mb-2">
-        © 2025 Coded with ☕ &amp; <span className="text-red-500">❤️</span> by{" "}
+        Copyright 2025 Coded with coffee &amp;{" "}
+        <span className="text-[#dfff6f]">love</span> by{" "}
         <span className="font-medium">Risal Walangadi</span>
       </p>
       <div className="flex justify-center gap-6 text-xl">
@@ -18,7 +23,7 @@ export function SiteFooter({ isLight }: SiteFooterProps) {
           href="https://wa.me/+6282197339862?text=Assalamualaikum+Warahmatullahi+Wabarakatuh."
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-orange"
+          className="hover:text-[#dfff6f]"
         >
           <FaWhatsapp />
         </a>
@@ -26,7 +31,7 @@ export function SiteFooter({ isLight }: SiteFooterProps) {
           href="https://facebook.com/izhal.gooner"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-orange"
+          className="hover:text-[#dfff6f]"
         >
           <FaFacebook />
         </a>
@@ -34,7 +39,7 @@ export function SiteFooter({ isLight }: SiteFooterProps) {
           href="https://instagram.com/izhal.gooner"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-orange"
+          className="hover:text-[#dfff6f]"
         >
           <FaInstagram />
         </a>
@@ -42,7 +47,7 @@ export function SiteFooter({ isLight }: SiteFooterProps) {
           href="https://tiktok.com/@izhal_gooner"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-orange"
+          className="hover:text-[#dfff6f]"
         >
           <FaTiktok />
         </a>

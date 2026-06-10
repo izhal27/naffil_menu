@@ -24,50 +24,50 @@ export function ContactSection({
   return (
     <section
       id="contact"
-      className={`py-16 ${isLight ? "bg-[#efe4d2]" : "bg-[#17181b]"}`}
+      className={`py-16 ${isLight ? "bg-[#fbf1cf]" : "bg-[#0c221c]"}`}
     >
       <div className="mx-auto grid w-full max-w-6xl gap-5 px-5 md:grid-cols-2 md:px-8">
         <div
-          className={`rounded border p-6 ${isLight ? "border-[#b99762]/35 bg-[#f8efdf]" : "border-white/10 bg-[#0f1012]"}`}
+          className={`rounded border p-6 ${isLight ? "border-[#2f725e]/15 bg-[#fff8df]" : "border-[#dfff6f]/15 bg-[#10241d]"}`}
         >
           <h3
-            className={`${displayFontClass} text-2xl ${isLight ? "text-[#1d1915]" : "text-white"}`}
+            className={`${displayFontClass} text-2xl ${isLight ? "text-[#15372f]" : "text-[#fff8df]"}`}
           >
             Kontak Kami
           </h3>
           <p
-            className={`mt-3 text-sm ${isLight ? "text-[#2a231c]/80" : "text-white/75"}`}
+            className={`mt-3 text-sm ${isLight ? "text-[#15372f]/75" : "text-[#fff8df]/75"}`}
           >
             Depan Kampus 4 UNG, Moutong, Kec. Tilongkabila, Kabupaten Bone
             Bolango, Gorontalo.
           </p>
           <p
-            className={`mt-2 text-sm ${isLight ? "text-[#2a231c]/80" : "text-white/75"}`}
+            className={`mt-2 text-sm ${isLight ? "text-[#15372f]/75" : "text-[#fff8df]/75"}`}
           >
             Jam Buka: 10:00 - 22:00 WITA
           </p>
           <p
-            className={`mt-2 text-sm ${isLight ? "text-[#2a231c]/80" : "text-white/75"}`}
+            className={`mt-2 text-sm ${isLight ? "text-[#15372f]/75" : "text-[#fff8df]/75"}`}
           >
             WhatsApp:
           </p>
           <p
-            className={`mt-2 text-sm ${isLight ? "text-[#2a231c]/80" : "text-white/75"}`}
+            className={`mt-2 text-sm ${isLight ? "text-[#15372f]/75" : "text-[#fff8df]/75"}`}
           >
             +62 852-4006-1230
           </p>
           <p
-            className={`mt-2 text-sm ${isLight ? "text-[#2a231c]/80" : "text-white/75"}`}
+            className={`mt-2 text-sm ${isLight ? "text-[#15372f]/75" : "text-[#fff8df]/75"}`}
           >
             +62 821-9501-9091
           </p>
         </div>
 
         <div
-          className={`rounded border p-6 ${isLight ? "border-[#b99762]/35 bg-[#f8efdf]" : "border-white/10 bg-[#0f1012]"}`}
+          className={`rounded border p-6 ${isLight ? "border-[#2f725e]/15 bg-[#fff8df]" : "border-[#dfff6f]/15 bg-[#10241d]"}`}
         >
           <p
-            className={`text-sm ${isLight ? "text-[#2a231c]/80" : "text-white/75"}`}
+            className={`text-sm ${isLight ? "text-[#15372f]/75" : "text-[#fff8df]/75"}`}
           >
             Untuk daftar menu lengkap, buka PDF yang sudah tersedia.
           </p>
@@ -75,7 +75,7 @@ export function ContactSection({
             <Link
               href="/menu"
               onClick={() => trackContactClick("buka_pdf_menu")}
-              className="rounded bg-[#d6ab62] px-6 py-3 text-sm font-semibold text-[#171719] hover:bg-[#efc77e]"
+              className="rounded bg-[#dfff6f] px-6 py-3 text-sm font-bold text-[#15372f] hover:bg-[#ecff9d]"
             >
               Buka PDF Menu
             </Link>
@@ -86,8 +86,8 @@ export function ContactSection({
               onClick={() => trackContactClick("reservasi_whatsapp")}
               className={`rounded px-6 py-3 text-sm font-semibold ${
                 isLight
-                  ? "border border-[#7d6440]/45 text-[#1d1915] hover:border-[#b48a4b] hover:text-[#7d5b27]"
-                  : "border border-white/30 text-white hover:border-[#f2c879] hover:text-[#f2c879]"
+                  ? "border border-[#2f725e]/30 text-[#15372f] hover:border-[#e5532c] hover:text-[#e5532c]"
+                  : "border border-[#fff8df]/25 text-[#fff8df] hover:border-[#dfff6f] hover:text-[#dfff6f]"
               }`}
             >
               Reservasi Via WhatsApp
@@ -95,7 +95,7 @@ export function ContactSection({
           </div>
           <div className="mt-4">
             <p
-              className={`text-sm ${isLight ? "text-[#2a231c]/85" : "text-white/80"}`}
+              className={`text-sm ${isLight ? "text-[#15372f]/80" : "text-[#fff8df]/80"}`}
             >
               Ikuti kami di media sosial
             </p>
