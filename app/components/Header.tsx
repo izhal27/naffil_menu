@@ -29,14 +29,14 @@ export function Header({
         hideNavbar ? "-translate-y-full opacity-0" : "translate-y-0 opacity-100"
       } ${
         isLight
-          ? "border-[#9f7d43]/25 bg-[#f7f2ea]/90"
-          : "border-[#d6ab62]/15 bg-[#0f0f10]/75"
+          ? "border-[#2f725e]/20 bg-[#fff7df]/90 shadow-sm shadow-[#2f725e]/10"
+          : "border-[#dfff6f]/15 bg-[#071915]/80 shadow-sm shadow-black/25"
       }`}
     >
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-3 md:px-8">
         <a
           href="#home"
-          className={`flex items-center gap-2 ${isLight ? "text-[#171719]" : "text-white"}`}
+          className={`flex items-center gap-2 ${isLight ? "text-[#15372f]" : "text-[#fff8df]"}`}
         >
           <Image src="/images/naffil-logo.png" alt="Naffil" width={34} height={34} />
           <span className={`${displayFontClass} text-sm md:text-base`}>
@@ -44,7 +44,7 @@ export function Header({
           </span>
         </a>
         <nav
-          className={`hidden items-center gap-6 text-xs md:flex ${isLight ? "text-[#171719]/80" : "text-white/80"}`}
+          className={`hidden items-center gap-6 text-xs font-semibold md:flex ${isLight ? "text-[#15372f]/80" : "text-[#fff8df]/80"}`}
         >
           <a href="#about" className={accentHoverClass}>Tentang</a>
           <a href="#menu" className={accentHoverClass}>Daftar Menu</a>
@@ -58,8 +58,8 @@ export function Header({
             onClick={onToggleMobileMenu}
             className={`rounded p-2 md:hidden ${
               isLight
-                ? "border border-[#9f7d43]/30 bg-white text-[#171719]"
-                : "border border-white/25 bg-white/10 text-white"
+                ? "border border-[#2f725e]/25 bg-white text-[#15372f]"
+                : "border border-[#dfff6f]/20 bg-[#fff8df]/10 text-[#fff8df]"
             }`}
           >
             {mobileMenuOpen ? <HiX size={20} /> : <HiMenu size={20} />}
@@ -70,8 +70,8 @@ export function Header({
             onClick={onToggleTheme}
             className={`rounded p-2 transition ${
               isLight
-                ? "border border-[#9f7d43]/30 bg-white text-[#171719] hover:bg-[#f4e9d7]"
-                : "border border-white/25 bg-white/10 text-white hover:bg-white/20"
+                ? "border border-[#2f725e]/25 bg-white text-[#15372f] hover:bg-[#edf7cf]"
+                : "border border-[#dfff6f]/20 bg-[#fff8df]/10 text-[#fff8df] hover:bg-[#dfff6f]/15"
             }`}
           >
             {isLight ? <FaMoon /> : <FaSun />}
@@ -83,8 +83,8 @@ export function Header({
         <nav
           className={`mx-5 mb-3 rounded-lg border p-3 text-sm md:hidden ${
             isLight
-              ? "border-[#9f7d43]/30 bg-[#f7f2ea] text-[#171719]"
-              : "border-white/10 bg-[#0f0f10] text-white"
+              ? "border-[#2f725e]/25 bg-[#fff7df] text-[#15372f]"
+              : "border-[#dfff6f]/15 bg-[#071915] text-[#fff8df]"
           }`}
         >
           <div className="flex flex-col gap-2">

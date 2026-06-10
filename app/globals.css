@@ -19,7 +19,8 @@ body {
 }
 
 .naffil-dark {
-  background: #0f1012;
+  background:
+    linear-gradient(180deg, #071915 0%, #0c221c 44%, #06110f 100%);
 }
 
 .theme-smooth,
@@ -85,4 +86,3 @@ body {
     transform: translateX(0);
   }
 }
-

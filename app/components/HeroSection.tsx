@@ -25,21 +25,26 @@ export function HeroSection({
       <div
         className={`absolute inset-0 ${
           isLight
-            ? "bg-[linear-gradient(180deg,rgba(245,235,220,.70)_0%,rgba(243,231,212,.66)_50%,rgba(241,227,205,.82)_100%)]"
-            : "bg-[linear-gradient(180deg,rgba(5,5,6,.62)_0%,rgba(8,8,10,.76)_50%,rgba(10,10,12,.94)_100%)]"
+            ? "bg-[linear-gradient(180deg,rgba(35,92,76,.72)_0%,rgba(46,110,91,.58)_42%,rgba(255,247,223,.94)_100%)]"
+            : "bg-[linear-gradient(180deg,rgba(4,21,17,.74)_0%,rgba(6,25,21,.86)_50%,rgba(6,17,15,.98)_100%)]"
         }`}
       />
-      <div className="relative mx-auto flex min-h-dvh w-full max-w-6xl flex-col items-center justify-center px-5 pt-24 text-center md:px-8 md:pt-20">
-        <p className={`mb-4 text-xs uppercase tracking-[0.18em] ${accentSoftTextClass}`}>
+      <div
+        className={`absolute inset-x-0 bottom-0 h-24 rounded-t-[60%] ${
+          isLight ? "bg-[#fff7df]" : "bg-[#06110f]"
+        }`}
+      />
+      <div className="relative mx-auto flex min-h-dvh w-full max-w-6xl flex-col items-center justify-center px-5 pb-14 pt-24 text-center md:px-8 md:pt-20">
+        <p className={`mb-4 text-xs font-bold uppercase tracking-[0.18em] ${accentSoftTextClass}`}>
           Nikmati Pengalamannya
         </p>
         <h1
-          className={`${displayFontClass} max-w-3xl text-4xl leading-tight ${isLight ? "text-[#1c1612]" : "text-white"} md:text-6xl`}
+          className={`${displayFontClass} max-w-3xl text-4xl leading-tight drop-shadow-sm ${isLight ? "text-[#fff8df]" : "text-[#fff8df]"} md:text-6xl`}
         >
           Nikmati Setiap <span className={accentTextClass}>Rasanya</span>
         </h1>
         <p
-          className={`mt-4 max-w-2xl text-sm md:text-base ${isLight ? "text-[#2a241f]/85" : "text-white/75"}`}
+          className={`mt-4 max-w-2xl text-sm md:text-base ${isLight ? "text-[#fff8df]/90" : "text-[#fff8df]/80"}`}
         >
           Nikmati pengalaman kuliner Nusantara dalam suasana hangat dengan sentuhan modern.
           Daftar menu lengkap tersedia dalam format PDF.
@@ -47,7 +52,7 @@ export function HeroSection({
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <a
             href="#menu-pdf-cta"
-            className="rounded bg-[#d6ab62] px-6 py-3 text-sm font-semibold text-[#171719] hover:bg-[#efc77e]"
+            className="rounded bg-[#dfff6f] px-6 py-3 text-sm font-bold text-[#15372f] shadow-lg shadow-[#071915]/20 hover:bg-[#ecff9d]"
           >
             Lihat Menu
           </a>
@@ -55,8 +60,8 @@ export function HeroSection({
             href="#about"
             className={`rounded px-6 py-3 text-sm font-semibold transition ${
               isLight
-                ? "border border-[#7d6440]/45 text-[#1d1915] hover:border-[#b48a4b] hover:text-[#7d5b27]"
-                : "border border-white/35 text-white hover:border-[#f2c879] hover:text-[#f2c879]"
+                ? "border border-[#fff8df]/55 text-[#fff8df] hover:border-[#dfff6f] hover:text-[#dfff6f]"
+                : "border border-[#fff8df]/35 text-[#fff8df] hover:border-[#dfff6f] hover:text-[#dfff6f]"
             }`}
           >
             Lihat Galeri Kami

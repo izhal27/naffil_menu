@@ -5,12 +5,7 @@ import { useEffect, useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import { AboutSection } from "./components/AboutSection";
 import { ContactSection } from "./components/ContactSection";
-import {
-  gallery,
-  menuCards,
-  serviceCards,
-  whyChoose,
-} from "./components/data";
+import { gallery, menuCards, serviceCards, whyChoose } from "./components/data";
 import { GallerySection } from "./components/GallerySection";
 import { Header } from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
@@ -32,11 +27,11 @@ export default function Home() {
   const [hideNavbar, setHideNavbar] = useState(false);
 
   const isLight = theme === "light";
-  const accentTextClass = isLight ? "text-[#8a5a18]" : "text-[#f1c46f]";
-  const accentSoftTextClass = isLight ? "text-[#9c6a20]" : "text-[#ddb370]";
+  const accentTextClass = isLight ? "text-[#e5532c]" : "text-[#dfff6f]";
+  const accentSoftTextClass = isLight ? "text-[#2f725e]" : "text-[#dfff6f]";
   const accentHoverClass = isLight
-    ? "hover:text-[#8a5a18]"
-    : "hover:text-[#f2c879]";
+    ? "hover:text-[#e5532c]"
+    : "hover:text-[#dfff6f]";
 
   useEffect(() => {
     const saved = window.localStorage.getItem("naffil-theme");
@@ -70,7 +65,7 @@ export default function Home() {
 
   return (
     <main
-      className={`theme-smooth ${bodyFont.className} ${isLight ? "bg-[#f7f2ea] text-[#171719]" : "naffil-dark text-white"}`}
+      className={`theme-smooth ${bodyFont.className} ${isLight ? "bg-[#fff7df] text-[#15372f]" : "naffil-dark text-[#fff8df]"}`}
     >
       <Header
         isLight={isLight}
